@@ -2,6 +2,7 @@ package br.com.nicolas.nxported.service;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import br.com.nicolas.nxported.model.Platform;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 class PlatformDetectorTest{
 
     @Test 
@@ -21,6 +22,16 @@ class PlatformDetectorTest{
         );
         assertEquals(Platform.TIKTOK, result);
     }
+
+    @Test
+    void shouldRejectUnsupportedPlatform() {
+    PlatformDetector detector = new PlatformDetector();
+
+    assertThrows(
+            IllegalArgumentException.class,
+            () -> detector.detect("https://www.youtube.com/watch?v=123")
+    );
+}
     
 
 }
