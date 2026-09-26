@@ -14,7 +14,7 @@ class PlatformDetectorTest{
     }
 
     @Test 
-    void shouldDetectTiktokUrl(){
+    void shouldDetectTikTokUrl(){
         PlatformDetector detector = new PlatformDetector();
         Platform result = detector.detect(
             "https://www.tiktok.com/@usuario/video/123"
