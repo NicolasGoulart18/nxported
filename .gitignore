@@ -1,0 +1,21 @@
+# Compiled files
+target/
+out/
+*.class
+
+# IDE settings
+.idea/
+.vscode/
+*.iml
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local environment and temporary media
+.env
+downloads/
+temp/
+*.mp4
+*.webm
+*.mp3
