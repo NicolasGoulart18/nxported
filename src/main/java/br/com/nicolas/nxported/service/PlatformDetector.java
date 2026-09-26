@@ -9,6 +9,9 @@ public class PlatformDetector {
         if(url.contains("instagram.com")){
             return Platform.INSTAGRAM;
         }
-        return null;
+        if (url.contains("tiktok.com")) {
+            return Platform.TIKTOK;
+        }
+        throw new IllegalArgumentException("Unsupported platform");
     }
 }
