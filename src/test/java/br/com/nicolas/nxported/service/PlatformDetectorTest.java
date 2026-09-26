@@ -13,4 +13,14 @@ class PlatformDetectorTest{
         assertEquals(Platform.INSTAGRAM,result);
     }
 
+    @Test 
+    void shouldDetectTiktokUrl(){
+        PlatformDetector detector = new PlatformDetector();
+        Platform result = detector.detect(
+            "https://www.tiktok.com/@usuario/video/123"
+        );
+        assertEquals(Platform.TIKTOK, result);
+    }
+    
+
 }
