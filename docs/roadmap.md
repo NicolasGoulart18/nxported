@@ -1,57 +1,59 @@
-# Nxported learning roadmap
+# Roadmap de aprendizado do Nxported
 
-This roadmap keeps the project useful while introducing one group of concepts
-at a time.
+Este roadmap mantém o projeto útil enquanto introduz um grupo de conceitos por
+vez. Cada fase deve ser compreendida e testada antes do avanço para a próxima.
 
-## Phase 1 — Java core
+## Fase 1 — Núcleo Java
 
-- Model the supported platforms with an enum.
-- Validate URLs.
-- Detect the platform from a URL.
-- Create domain exceptions.
-- Add unit tests with JUnit.
+- [x] Modelar as plataformas suportadas com um enum.
+- [x] Rejeitar URLs vazias.
+- [x] Detectar a plataforma a partir de uma URL.
+- [x] Rejeitar plataformas não suportadas.
+- [x] Adicionar testes unitários com JUnit.
+- [ ] Validar a estrutura completa da URL.
+- [ ] Criar exceções específicas do domínio.
 
-**Learning focus:** classes, methods, enums, exceptions, packages and tests.
+**Foco do aprendizado:** classes, métodos, enums, exceções, pacotes e testes.
 
-## Phase 2 — Extraction boundary
+## Fase 2 — Limite de extração
 
-- Define a common extractor contract.
-- Implement one extractor per platform.
-- Keep platform-specific rules isolated.
-- Represent video metadata in the domain.
+- [ ] Definir um contrato comum para os extratores.
+- [ ] Implementar um extrator para cada plataforma.
+- [ ] Manter isoladas as regras específicas de cada plataforma.
+- [ ] Representar os metadados do vídeo no domínio.
 
-**Learning focus:** interfaces, polymorphism, cohesion and low coupling.
+**Foco do aprendizado:** interfaces, polimorfismo, coesão e baixo acoplamento.
 
-## Phase 3 — External processes and HTTP
+## Fase 3 — Processos externos e HTTP
 
-- Make HTTP requests when authorized.
-- Integrate the selected media tool.
-- Use FFmpeg for supported conversions.
-- Manage temporary files safely.
+- [ ] Fazer requisições HTTP quando autorizadas.
+- [ ] Integrar a ferramenta de mídia escolhida.
+- [ ] Usar FFmpeg nas conversões suportadas.
+- [ ] Gerenciar arquivos temporários com segurança.
 
-**Learning focus:** HTTP, JSON, processes, files and error handling.
+**Foco do aprendizado:** HTTP, JSON, processos, arquivos e tratamento de erros.
 
-## Phase 4 — REST API
+## Fase 4 — API REST
 
-- Add Spring Boot.
-- Create controllers, DTOs and services.
-- Return consistent errors.
-- Document the API.
+- [ ] Adicionar Spring Boot.
+- [ ] Criar controllers, DTOs e services.
+- [ ] Retornar erros consistentes.
+- [ ] Documentar a API.
 
-**Learning focus:** REST, dependency injection and application layers.
+**Foco do aprendizado:** REST, injeção de dependência e camadas da aplicação.
 
-## Phase 5 — Web interface
+## Fase 5 — Interface web
 
-- Create the URL form.
-- Display validation and processing states.
-- Show video metadata.
-- Offer the authorized download.
+- [ ] Criar o formulário para receber a URL.
+- [ ] Exibir os estados de validação e processamento.
+- [ ] Mostrar os metadados do vídeo.
+- [ ] Disponibilizar o download autorizado.
 
-**Learning focus:** front-end integration and user experience.
+**Foco do aprendizado:** integração com o front-end e experiência do usuário.
 
-## Phase 6 — Production readiness
+## Fase 6 — Preparação para produção
 
-- Add rate limiting.
-- Create a processing queue if necessary.
-- Delete temporary files automatically.
-- Add monitoring and deployment documentation.
+- [ ] Adicionar limitação de requisições.
+- [ ] Criar uma fila de processamento, se necessário.
+- [ ] Apagar automaticamente os arquivos temporários.
+- [ ] Adicionar monitoramento e documentação de implantação.
